@@ -1,0 +1,176 @@
+:root {
+  --black: #333333;
+  --red: #e8612b;
+  --orange: #ff8e51;
+  --yellow: #f8c666;
+  --mustard: #d6971e;
+  --rust: #92543b;
+  --earth: #825b61;
+  --sand: #bcadaf;
+  --blush: #f2cbd1;
+  --pale: #ffe8dc;
+  --vellum: #eeeae3;
+  --ghost: #f7f5f1;
+  --foam: #e9ebe2;
+  --lichen: #d2d6c5;
+  --moss: #3c402b;
+  --slate: #3e3d3a;
+  --stone: #343330;
+  --dark-grey: #656461;
+}
+
+body {
+  background: #f1f1f1;
+  font-family: "Figtree", sans-serif;
+  color: var(--black);
+}
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+/* Header Styles */
+header {
+  background-color: #f2f2f2;
+  padding: 5px 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+  /* align-content: center; */
+  justify-content: space-evenly;
+  margin: 5px;
+}
+
+nav li {
+  display: block;
+  width: 20%;
+  text-align: center;
+}
+
+nav a {
+  font-weight: bold;
+  display: block;
+  color: dimgray;
+  text-decoration: none;
+}
+
+header {
+  display: none;
+}
+
+.ph-duotone {
+  font-size: 48px;
+  filter: drop-shadow(2px 7px 2px #999);
+}
+
+/* Main Styles */
+main {
+  /* padding: 20px; */
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+#about img {
+  border-radius: 50%; /* display: block; */ /* margin: auto; */
+}
+
+#skills ul {
+  text-align: initial;
+  display: block;
+  margin: auto;
+  width: 80%;
+  max-width: 500px;
+}
+
+section {
+  margin-bottom: 50px;
+  text-align: -webkit-center;
+}
+
+h2 {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  /* display: inline-block; */
+  text-align: center;
+  filter: drop-shadow(2px 7px 2px #999);
+}
+
+.box {
+  margin-bottom: 0px;
+  display: flex;
+  width: 95%;
+  max-width: 500px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  flex-direction: row;
+  padding: 10px;
+  margin: 0 auto 10px;
+  background: #fff;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+img {
+  width: 100px;
+  border-radius: 10px;
+}
+
+ul {
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: block;
+  padding: 20px;
+  list-style: none;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+/* Contact Form Styles */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: var(--black);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #666;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}

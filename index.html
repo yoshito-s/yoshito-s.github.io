@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yoshito_s</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="accordion.css">
+  <!-- GoogleFont -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="./yoshito_s_400x400.jpg" alt="Profile Image">
+      <p>自己紹介文をここに書く</p>
+      <a href="http://twitter.com/yoshito_s"><i class="ph-duotone ph-twitter-logo"></i></a>
+      <a href=""><i class="ph-duotone ph-youtube-logo"></i></a>
+      <a href=""><i class="ph-duotone ph-amazon-logo"></i></a>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Adobe PremierePro</li>
+        <li>Adobe Photoshop</li>
+        <li>Avid MediaComposer</li>
+        <li>
+          <div class="accordion">
+            <div class="option">
+            <input type="checkbox" id="toggle1" class="toggle">
+            <label class="title" for="toggle1">詳細</label>
+            <div class="content">
+            <p>▼加工・編集歴<br>
+              テレビ番組VTR、バラエティ番組、SP番組、旅番組、トーク番組、クイズ番組、討論番組、情報番組、料理番組、通販番組、YouTube番組、YouTubeショート動画、TikTok動画、音楽番組、マスイン(街頭インタビュー)、テレビCM・インスタ広告・YouTube広告、結婚式VTR、商品紹介VTR、企業説明会、セミナーVTR、番組タイトルロゴ作成、Amazon・楽天市場他、各種クラウドファンディングタイトル画像・本文画像・本文動画作成、加工・修正など</p>
+            </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="works" id="works">
+      <i class="ph-duotone ph-puzzle-piece"></i>
+      <h2>Adobe PremierePro Extensions</h2>
+      <div>
+        <div class="box">
+          <img src="./img/tobun.jpg" alt="Work Image">
+          <div class="box2">
+            <h3>tobun</h3>
+            <p>シーケンスのIN-OUT間に選択されたクリップを等間隔に配置</p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./img/tsumiki.jpg" alt="Work Image">
+          <div class="box2">
+            <h3>tsumiki</h3>
+            <p>シーケンス上に選択されたクリップのVideo/Audioを縦に積む</p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./img/tsumikilite.jpg" alt="Work Image">
+          <div class="box2">
+            <h3>tsumiki lite</h3>
+            <p>シーケンス上に選択されたビデオクリップを縦に積む</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="works">
+      <i class="ph-duotone ph-file-cloud"></i>
+      <h2>CloudSourcing</h2>
+      <ul>
+        <li>
+          <h3>Lancers</h3>
+          <!-- <img src="work1.png" alt="Work Image"> -->
+          <!-- <p>説明</p> -->
+        </li>
+      </ul>
+    </section>
+
+    <!-- <section id="contact">
+      <i class="ph-duotone ph-paper-plane-tilt"></i>
+      <h2>Contact</h2>
+      <form action="submit.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br>
+        <input type="submit" value="送信">
+      </form>
+    </section> -->
+  </main>
+  <footer>
+    <p>&copy; 2023 yoshito_s</p>
+  </footer>
+</body>
+
+</html>
