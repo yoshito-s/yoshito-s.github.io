@@ -1,26 +1,12 @@
 :root {
+  --bg: #eeeae3;
   --black: #333333;
-  --red: #e8612b;
-  --orange: #ff8e51;
-  --yellow: #f8c666;
-  --mustard: #d6971e;
-  --rust: #92543b;
-  --earth: #825b61;
-  --sand: #bcadaf;
-  --blush: #f2cbd1;
-  --pale: #ffe8dc;
-  --vellum: #eeeae3;
-  --ghost: #f7f5f1;
-  --foam: #e9ebe2;
-  --lichen: #d2d6c5;
-  --moss: #3c402b;
-  --slate: #3e3d3a;
-  --stone: #343330;
-  --dark-grey: #656461;
+  --gley: darkgrey;--lightgrey: #eeeeee;
+  --hilite:#c4e456;
 }
 
 body {
-  background: #f1f1f1;
+  background: var(--bg);
   font-family: "Figtree", sans-serif;
   color: var(--black);
 }
@@ -84,10 +70,14 @@ main {
   text-align: initial;
   display: block;
   margin: auto;
-  width: 80%;
+  /* width: 80%; */
   max-width: 500px;
 }
 
+#skills i.ph-fill.ph-play:before {
+  font-size: xx-small;
+  vertical-align: middle;
+}
 section {
   margin-bottom: 50px;
   text-align: -webkit-center;
@@ -98,7 +88,7 @@ h2 {
   margin-bottom: 20px;
   /* display: inline-block; */
   text-align: center;
-  filter: drop-shadow(2px 7px 2px #999);
+  filter: drop-shadow(2px 3px 2px #aaa);
 }
 
 .box {
@@ -166,7 +156,8 @@ input[type="submit"]:hover {
 
 /* Footer Styles */
 footer {
-  background-color: #f2f2f2;
+  background-color: var(--black);
+  color: var(--bg);
   padding: 10px 20px;
   position: fixed;
   bottom: 0;

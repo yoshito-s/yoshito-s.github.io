@@ -1,0 +1,68 @@
+.timeline {
+    width: 96%;
+    max-width: 940px;
+    margin: 28px auto;
+    border: 1px solid #eeeeee;
+}
+
+.timeline-list {
+    padding: 12px 0;
+}
+
+.timeline-list-item {
+    display: flex;
+    /* line-height: 1.5; */
+    /* font-size: 16px; */
+}
+
+.timeline-list-item .date {
+    width: 15%;
+    padding: 3px 0 0 15px;
+    color: #888888;
+    font-weight: lighter;
+    font-family: auto;
+    font-size: 0.8em;
+}
+
+.timeline-list-item .timeline-content {
+    position: relative;
+    width: 80%;
+    padding: 0 1px 10px 5px;
+    border-left: 1px solid var(--gley);
+}
+
+.timeline-list-item .timeline-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px; //widthの半分の値を指定
+    width: 20px;
+    height: 20px;
+    background-color: #00c2bc;
+    border-radius: 10px;
+}
+
+.timeline h3 {display: block;background-color: var(--lightgrey);text-align: center;}
+
+.timeline-content-ul{
+  padding: 0 0 0 0px;
+  list-style: none;
+}
+::marker{
+    color: red;
+    font-size: smaller;
+}
+.timeline-content-ul li:before {
+    color: var(--gley);
+    content: "-";
+    font-size: 17px;
+    margin: 0 0 0 -7px;
+    /* position: unset; */
+    top: 0px;
+    left: -2px;
+  }
+
+.timeline-content-ul li {
+  text-indent: -0.1em;
+  padding-left: 0.1em;
+ }
