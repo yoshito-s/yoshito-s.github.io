@@ -1,4 +1,5 @@
 .timeline {
+    user-select: text;
     width: 96%;
     max-width: 940px;
     margin: 28px auto;

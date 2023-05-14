@@ -1,17 +1,20 @@
 :root {
   --bg: #eeeae3;
   --black: #333333;
-  --gley: darkgrey;--lightgrey: #eeeeee;
-  --hilite:#c4e456;
+  --gley: darkgrey;
+  --lightgrey: #eeeeee;
+  --hilite: #c4e456;
 }
 
 body {
+  user-select: none;
   background: var(--bg);
   font-family: "Figtree", sans-serif;
   color: var(--black);
 }
 a {
   text-decoration: none;
+  cursor: pointer;
   color: var(--black);
 }
 /* Header Styles */
@@ -28,8 +31,10 @@ header {
 nav ul {
   display: flex;
   /* align-content: center; */
-  justify-content: space-evenly;
   margin: 5px;
+  flex-direction: column;
+  background: none;
+  width: 200px;
 }
 
 nav li {
@@ -47,13 +52,18 @@ nav a {
 
 header {
   display: none;
+  position: fixed;
+  width: 10%;
 }
 
 .ph-duotone {
   font-size: 48px;
-  filter: drop-shadow(2px 7px 2px #999);
 }
 
+.ph-duotone,
+h2 {
+  filter: drop-shadow(2px 3px 2px #aaa);
+}
 /* Main Styles */
 main {
   /* padding: 20px; */
@@ -64,6 +74,21 @@ main {
 
 #about img {
   border-radius: 50%; /* display: block; */ /* margin: auto; */
+}
+#info {
+  margin: 10px 0;
+}
+#info a {
+  background: linear-gradient(transparent 60%, var(--hilite) 30%);
+  padding: 0 3px;
+  margin: 0 2px;
+}
+
+#link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 500px;
 }
 
 #skills ul {
@@ -78,6 +103,7 @@ main {
   font-size: xx-small;
   vertical-align: middle;
 }
+
 section {
   margin-bottom: 50px;
   text-align: -webkit-center;
@@ -88,7 +114,6 @@ h2 {
   margin-bottom: 20px;
   /* display: inline-block; */
   text-align: center;
-  filter: drop-shadow(2px 3px 2px #aaa);
 }
 
 .box {
@@ -96,7 +121,6 @@ h2 {
   display: flex;
   width: 95%;
   max-width: 500px;
-  border: 1px solid #dddddd;
   border-radius: 10px;
   flex-direction: row;
   padding: 10px;
@@ -122,6 +146,24 @@ ul {
 h3 {
   font-size: 1.2em;
   margin-bottom: 5px;
+}
+
+.other_div {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.other_a {
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: block;
+  padding: 20px;
+  margin: 20px;
+  list-style: none;
+  min-width: 30%;
 }
 
 /* Contact Form Styles */
