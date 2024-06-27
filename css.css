@@ -4,6 +4,7 @@
   --gley: darkgrey;
   --lightgrey: #eeeeee;
   --hilite: #c4e456;
+  --hilitehover: #d3eb84;
 }
 
 body {
@@ -116,23 +117,65 @@ h2 {
   text-align: center;
 }
 
-.box {
-  margin-bottom: 0px;
-  display: flex;
-  width: 95%;
-  max-width: 500px;
-  border-radius: 10px;
-  flex-direction: row;
-  padding: 10px;
-  margin: 0 auto 10px;
-  background: #fff;
-  align-items: flex-start;
-  flex-wrap: nowrap;
+
+#apps {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
-.box a {
-  width: 100%;
-  margin: auto;
+.app {
+	background-color: white;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin: 1rem;
+	padding: 1rem;
+	text-align: center;
+	width: calc(33% - 2rem);
+	box-sizing: border-box;
+}
+
+.app img {
+	max-width: 100px;
+	height: auto;
+	display: block;
+	margin: 0 auto 1rem;
+}
+
+.app h3 {
+	margin: 0.5rem 0;
+}
+
+.app p {
+	color: #666;
+}
+
+.button {
+	display: inline-block;
+	padding: 0.25rem 1rem;
+	color: var(--black);
+	background-color: var(--hilite);
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: var(--hilitehover);
+}
+
+@media (max-width: 768px) {
+	.app {
+			width: calc(50% - 2rem);
+	}
+}
+
+@media (max-width: 480px) {
+	.app {
+			width: 100%;
+	}
 }
 
 img {
@@ -211,4 +254,8 @@ footer {
   left: 0;
   right: 0;
   text-align: center;
+}
+
+#skills{
+	margin-bottom: 100px;
 }
